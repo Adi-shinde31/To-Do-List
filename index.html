@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>To-Do List</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+          <h1 id="heading">To-Do List</h1>
+          <input type="text" name="list" id="listId">
+          <button id="addItem" onclick="addItemToList()" type="button">+</button>
+     </div>
+     <div class="listItems">
+          <div class="listCount">Total Items Added : <span id="countNumber">0</span></div>
+          <ol id="listView"></ol>
+     </div>
+
+     <script src="script.js"></script>
+</body>
+</html>

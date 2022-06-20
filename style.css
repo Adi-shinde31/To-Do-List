@@ -1,0 +1,65 @@
+*{
+     margin: 0;
+     padding:0;
+     box-sizing: border-box;
+}
+html, body{
+     /* background-image: linear-gradient(to right, #253898, #5737D6);
+     background-image: linear-gradient(to right, #00BC40, #4C3AE3);
+     background-image: linear-gradient(to right, #FF4331, #D31A50);
+     background-image: linear-gradient(to right, #FF9F4A, #FF3C83); */
+     background-color: #fff;
+}
+.container{
+     margin-top: 100px;
+     text-align: center;
+     padding: 20px;
+}
+#heading{
+     font-size: 40px;
+}
+#heading::after{
+     content: "";
+     position: absolute;
+     top:27%;
+     left: 50%;
+     width: 160px;
+     height: 3px;
+     background-color: #000;
+     transform: translate(-50%);
+}
+#listId{
+     margin-top: 30px;
+     padding: 10px 8px;
+     border-radius: 7px;
+     width: 250px;
+     outline: none;
+     font-size: 16px;
+}
+#addItem{
+     /* padding:15px; */
+     height: 50px;
+     width: 50px;
+     border-radius: 50%;
+     background-color:#000;
+     color: #fff;
+     font-size: 20px;
+}
+#addItem:hover{
+     color: #000;
+     background-color: #fff;
+}
+
+.listItems{
+     margin: auto;
+}
+.listCount, ol{
+     margin-left: 15% ;
+}
+ol {
+     font-size: 20px;
+     margin:30px 0px 0px 20%; 
+}
+ol li{
+     padding: 10px;
+}
