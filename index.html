@@ -9,22 +9,25 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-     <div class="themes">
-          <!-- <i class="fa-solid fa-3x fa-sun"></i> -->
-          <i class="fa-solid fa-3x fa-moon"></i>
-     </div>
+     <div class="box">
 
-     <div class="container">
-
-          <h1 id="heading">To-Do List</h1>
-          <input type="text" name="list" id="listId">
-          <button id="addItem" onclick="addItemToList()" type="button">+</button>
+          <div id="themes">
+               <i id="sun" class="fa-solid fa-3x fa-sun"></i>
+               <i id="moon" class="fa-solid fa-3x fa-moon"></i>
+          </div>
+          
+          <div class="container">
+               
+               <h1 id="heading">To-Do List</h1>
+               <input type="text" name="list" id="listId">
+               <button id="addItem" onclick="addItemToList()" type="button">+</button>
+          </div>
+          <div class="listItems">
+               <div class="listCount">Total Items Added : <span id="countNumber">0</span></div>
+               <ol id="listView"></ol>
+          </div>
+          
      </div>
-     <div class="listItems">
-          <div class="listCount">Total Items Added : <span id="countNumber">0</span></div>
-          <ol id="listView"></ol>
-     </div>
-
      <script src="script.js"></script>
 </body>
 </html>
