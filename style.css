@@ -47,17 +47,9 @@ body {
 #heading {
      font-size: 40px;
      color: var(--secondary-color);
-}
-
-#heading::after {
-     content: "";
-     position: absolute;
-     top: 28%;
-     left: 50%;
-     width: 160px;
-     height: 3px;
-     background-color: var(--secondary-color);
-     transform: translate(-50%);
+     border-bottom: 2px solid var(--secondary-color);
+     width: fit-content;
+     margin: 0 auto ;
 }
 
 #listId {
@@ -88,6 +80,7 @@ body {
 
 .listItems {
      margin: auto;
+     margin-top: 5px;
      width: 70%;
      height: 330px;
      overflow: auto;
@@ -144,6 +137,15 @@ li:nth-child(odd) {
           width: 90%;
           border: 2px solid var(--secondary-color);
      }
+}
 
-
+@media screen and (max-width:375px) {
+     .listItems {
+          width: 100%;
+     }
+     ol li {
+          padding: 10px;
+          width: 90%;
+          font-size: 15px;
+     }
 }
