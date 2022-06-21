@@ -15,10 +15,10 @@
 
 html, body{
      background-color: var(--primary-color);
-}
-.box{
      height: 100vh;
 }
+
+
 #themes{
      width: max-content;
      text-align: right;
@@ -28,6 +28,7 @@ html, body{
      padding: 5px;
      border-radius: 15px;
      border: 2px solid var(--secondary-color);
+     cursor: pointer;
 }
 #sun{
      display: none;
@@ -69,6 +70,7 @@ html, body{
      color: var(--primary-color);
      background-color:var(--secondary-color);
      font-size: 20px;
+     cursor: pointer;
 }
 #addItem:hover{
      color: var(--secondary-color);
@@ -76,6 +78,9 @@ html, body{
 }
 .listItems{
      margin: auto;
+     width: 70%;
+     height: 330px;
+     overflow: auto;
 }
 .listCount, ol{
      color: var(--secondary-color);
@@ -87,4 +92,21 @@ ol {
 }
 ol li{
      padding: 10px;
+     width: 80%;
+     border: 2px solid var(--secondary-color);
+}
+   
+li:nth-child(odd) {
+     background: rgb(159, 159, 159);
+}
+#deleteItem{
+     padding: 3px;
+     background-color: #d9534f;
+     cursor: pointer;
+     border: 2px solid var(--secondary-color);
+}
+#deleteItem:hover{
+     background-color: var(--primary-color);
+     border-color: #d9534f;
+     color:#d9534f;
 }
