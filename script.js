@@ -9,14 +9,20 @@ function addItemToList(){
           document.getElementById("listView").append(list);
           listCount++;
           document.getElementById("countNumber").innerHTML = listCount;
+          
           var deleteBtn = document.createElement("button");
-
           document.getElementById("listView").append(deleteBtn);
           list.appendChild(deleteBtn);
-
+          
           deleteBtn.setAttribute("id", "deleteItem");
           deleteBtn.style.float = "right";
           deleteBtn.innerHTML = "Delete";
+          
+          deleteBtn.onclick = function(){
+               list.remove();
+               listCount--;
+               document.getElementById("countNumber").innerHTML = listCount;
+          }
 
      }
 }
@@ -34,5 +40,3 @@ themes.onclick = function(){
           document.getElementById("sun").style.display="none";
      }
 }
-
-// alert(document.body.clientHeight);
