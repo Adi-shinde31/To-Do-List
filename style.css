@@ -86,8 +86,7 @@ body {
      overflow: auto;
 }
 
-.listCount,
-ol {
+.listCount, ol {
      color: var(--secondary-color);
      margin-left: 15%;
 }
@@ -141,11 +140,14 @@ li:nth-child(odd) {
 
 @media screen and (max-width:375px) {
      .listItems {
+          margin-top: 5px;
           width: 100%;
+          height: 310px;
+       
      }
      ol li {
           padding: 10px;
-          width: 90%;
+          width: 100%;
           font-size: 15px;
      }
 }
