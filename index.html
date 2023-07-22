@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>To-Do List</title>
-     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- Google Fonts Links -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Mynerve&family=Pangolin&family=Roboto+Slab:wght@300&display=swap"
+          rel="stylesheet">
+
+     <!-- Bootstrap CDN link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- Custom CSS link -->
+     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
      <div id="box">
 
@@ -15,19 +29,21 @@
                <i id="sun" class="fa-solid fa-3x fa-sun"></i>
                <i id="moon" class="fa-solid fa-3x fa-moon"></i>
           </div>
-          
+
           <div class="container">
-               
                <h1 id="heading">To-Do List</h1>
-               <input type="text" name="list" id="listId">
+               <input type="text" name="list" id="listId" placeholder="Add Something...">
                <button id="addItem" onclick="addItemToList()" type="button">+</button>
           </div>
           <div class="listItems">
                <div class="listCount">Total Items Added : <span id="countNumber">0</span></div>
                <ol id="listView"></ol>
           </div>
-          
+
      </div>
-     <script src="script.js"></script>
+
+     <!-- Custom JavaScript Link -->
+     <script src="js/script.js"></script>
 </body>
+
 </html>

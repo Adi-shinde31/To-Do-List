@@ -7,7 +7,6 @@
 :root {
      --primary-color: #fff;
      --secondary-color: rgb(24, 24, 24);
-
 }
 
 .darkTheme {
@@ -20,7 +19,6 @@ body {
      background-color: var(--primary-color);
      height: 100vh;
 }
-
 
 #themes {
      width: max-content;
@@ -45,11 +43,12 @@ body {
 }
 
 #heading {
-     font-size: 40px;
+     font-size: 64px;
      color: var(--secondary-color);
      border-bottom: 2px solid var(--secondary-color);
      width: fit-content;
      margin: 0 auto ;
+     font-family: 'Pangolin', cursive;
 }
 
 #listId {
@@ -60,6 +59,10 @@ body {
      outline: none;
      font-size: 16px;
      color: #000;
+}
+
+input[placeholder="Add Something..."]{
+     font-family: 'Mynerve', cursive;
 }
 
 #addItem {
@@ -82,10 +85,13 @@ body {
      margin: auto;
      margin-top: 5px;
      width: 70%;
-     height: 330px;
+     height: 300px;
      overflow: auto;
 }
 
+.listCount{
+     font-family: 'Roboto Slab', serif;
+}
 .listCount, ol {
      color: var(--secondary-color);
      margin-left: 15%;
@@ -100,6 +106,7 @@ ol li {
      padding: 10px;
      width: 80%;
      border: 2px solid var(--secondary-color);
+     font-family: 'Roboto Slab', serif;
 }
 
 li:nth-child(odd) {
